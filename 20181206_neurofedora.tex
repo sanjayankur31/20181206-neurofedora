@@ -1,0 +1,61 @@
+%% Ankur Sinha
+
+%% packages %%
+% support for coloured text
+\usepackage{color}
+% IPA
+\usepackage{tipa}
+\usepackage{tikz}
+\usepackage{jneurosci}
+\usepackage{subfig}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[style=verbose,backend=biber,autocite=footnote]{biblatex}
+\addbibresource{/home/asinha/Documents/01_Readables/00_research_papers/masterbib.bib}
+% Use opensans
+\usepackage[default,osfigures,scale=0.95]{opensans}
+% for strike through
+\usepackage[normalem]{ulem}
+% links, urls, refs
+\definecolor{links}{HTML}{2A1B81}
+% Fedora blue for the theme
+\definecolor{FedoraBlue}{HTML}{2A1B81}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=Green,urlcolor=links}
+% graphics
+\usepackage{graphicx}
+% algorithm
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{wrapfig}
+\usepackage{textgreek}
+\usepackage{euler}
+
+% beamer theme
+% use defaults for theme
+\usetheme[sectionpage=none, numbering=fraction]{metropolis}
+\usefonttheme[onlymath]{serif}
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamerfont{caption}{size=\tiny}
+\setbeamercolor{alerted text}{fg=Green}
+
+% Not needed in metropolis, but in general footnote citation fixes: https://tex.stackexchange.com/questions/44217/how-can-i-stop-footcite-from-hijacking-my-beamer-columns
+% how to use multiple references to the same footnote: https://tex.stackexchange.com/questions/27763/beamer-multiple-references-to-the-same-footnote
+
+%% title %%
+% \title[Progress report]{Structural plasticity and associative memory in balanced neural networks with spike-time dependent inhibitory plasticity}
+\title[NeuroFedora]{\includegraphics[keepaspectratio,width=.25\textwidth]{images/NeuroFedoraLogo01.png}\\NeuroFedora}
+\subtitle{A ready to use Free and Open source platform for neuroscientists}
+\author[Ankur Sinha]{Ankur Sinha @ Fedora}
+\date[7/12/2018]{7/12/2018}
+
+%% document begins %%
+\begin{document}
+
+% title frame %%
+\begin{frame}
+  \titlepage{}
+\end{frame}
+
+%% Three slides for 5 minutes seems good
+\end{document}
